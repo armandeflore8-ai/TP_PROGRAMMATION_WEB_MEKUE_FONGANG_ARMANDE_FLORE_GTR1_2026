@@ -1,0 +1,239 @@
+!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>TechNova</title>
+    <style>
+    *{
+        margin:0;padding:0;box-sizing:border-box;font-family:Arial, Helvetica, sans-serif;
+    }
+    body{
+        background:#f3f4f8;color:#111;
+    }
+    a{
+        text-decoration:none;
+    }
+    /* HEADER */
+    header{
+        background:linear-gradient(to right,#020b2d,#03144f);color:white;padding:20px 8%;
+    }
+    .navbar{
+        display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;
+    }
+    .logo{
+        font-size:30px;font-weight:bold;color:#4da3ff;
+    }
+    .logo span{
+    color:white;
+    }
+    .nav-links{
+        display:flex;gap:30px;align-items:center;
+    }
+    .nav-links a{
+        color:white; font-size:15px;transition:0.3s;
+    }
+    .nav-links a:hover{
+        color:#4da3ff;
+    }
+    .btn{
+        background:#1677ff;padding:12px 20px;border-radius:6px;color:white;font-weight:bold;transition:0.3s;
+    }
+    .btn:hover{
+        background:#0059d6;
+    }
+    /* HERO */
+    .hero{
+        display:flex;justify-content:space-between;align-items:center;gap:40px;padding:70px 0;flex-wrap:wrap;
+    }
+    .hero-text{
+        flex:1;min-width:300px;
+    }
+    .hero-text h1{
+        font-size:55px;margin:20px 0;line-height:1.1;
+    }
+    .hero-text p{
+        color:#d7d7d7;line-height:1.7;margin-bottom:30px;max-width:550px;
+    }
+    .hero-buttons{
+        display:flex;gap:20px;flex-wrap:wrap;
+    }
+    .btn-outline{
+        border:2px solid #2b7fff;padding:12px 20px;border-radius:6px;color:white;transition:0.3s;
+    }
+    .btn-outline:hover{
+        background:#2b7fff;
+    }
+    .hero-image{
+        flex:1;min-width:300px;text-align:center;
+    }
+    .hero-image img{
+        width:100%;max-width:550px;border-radius:15px;
+    }
+    /* SECTION */
+    section{
+        padding:70px 8%;
+    }
+    .section-title{
+        text-align:center;margin-bottom:50px;
+    }
+    .section-title h2{
+        font-size:40px;margin-top:10px;
+    }
+    .section-title p{   
+        color:#1677ff;font-weight:bold;
+    }
+    /* CARDS */
+    .cards{
+        display:grid;grid-template-columns:repeat(auto-fit,minmax(250px,1fr));gap:25px;
+    }
+    .card{
+        background:white;padding:30px;border-radius:15px;box-shadow:0 5px 15px rgba(0,0,0,0.08);transition:0.3s;
+    }
+    .card:hover{
+        transform:translateY(-5px);
+    }
+    .card img{
+        width:60px;margin-bottom:20px;
+    }
+    .card h3{
+        margin-bottom:15px;
+    }
+    .card p{
+        color:#666;line-height:1.6;margin-bottom:15px;
+    }
+    .card a{
+        color:#1677ff;font-weight:bold;
+    }
+    /* ARTICLES */
+    .articles{
+        display:grid;grid-template-columns:repeat(auto-fit,minmax(300px,1fr));gap:25px;
+    }
+    .article{
+        background:white;border-radius:15px;overflow:hidden;box-shadow:0 5px 15px rgba(0,0,0,0.08);
+    }
+    .article img{
+        width:100%;height:220px;object-fit:cover;
+    }
+    .article-content{
+        padding:20px;
+    }
+    .article-content h3{
+        margin-bottom:15px;
+    }
+    .article-content p{
+        color:#666;line-height:1.6;
+    }
+    /* FOOTER */
+    footer{
+        background:#020b2d;color:white;padding:50px 8%;margin-top:60px;
+    }
+    .footer-content{
+        display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:40px;
+    }
+    footer h3{
+        margin-bottom:20px;
+    }
+    footer ul{
+        list-style:none;
+    }
+    footer ul li{
+        margin-bottom:12px;
+    }
+    footer ul li a{
+        color:#d6d6d6;
+    }
+    .copyright{
+        text-align:center;margin-top:40px;border-top:1px solid rgba(255,255,255,0.1);padding-top:20px;color:#c7c7c7;
+    }
+    /* RESPONSIVE */
+    @media(max-width:900px){
+    .navbar{
+        flex-direction:column;gap:20px;
+    }
+    .nav-links{
+        flex-wrap:wrap;justify-content:center;
+    }
+    .hero{
+        flex-direction:column;text-align:center;
+    }
+    .hero-text h1{
+        font-size:40px;
+    }
+    .hero-buttons{
+        justify-content:center;
+    }
+    }
+    @media(max-width:600px){
+    .hero-text h1{
+        font-size:32px;
+    }
+    .section-title h2{
+        font-size:28px;
+    }
+    .nav-links{
+        gap:15px;
+    }
+    }
+    </style>
+    </head>
+    <body>
+    <!-- HEADER -->
+    <header>
+        <div class="navbar">
+        <div class="logo">Tech<span>Nova</span></div>   
+        <div class="nav-links">
+        <a href="#">Accueil</a>
+        <a href="#">IA</a>
+        <a href="#">Cybersécurité</a>
+        <a href="#">Cloud</a>
+        <a href="#">Blog</a>
+        <a href="#">Contact</a>
+        <a href="#" class="btn">S'abonner</a>
+        </div>
+        </div>
+        <!-- HERO -->
+        <div class="hero">
+        <div class="hero-text">
+        <p>Découvrez le futur, aujourd’hui</p>
+        <h1>L’actualité des nouvelles technologies</h1>
+        <p>Restez informé des dernières avancées en intelligence artificielle,cybersécurité, cloud computing et bien plus encore.</p>
+        <div class="hero-buttons">
+        <a href="#" class="btn">Explorer les articles</a>
+        <a href="#" class="btn-outline">Voir nos vidéos</a>
+        </div>
+        </div>
+        <div class="TAGNE-TOUKAM-JEAN-SAMUEL-TP WEB">
+        <img src="Image/IMG 3 IA.jpg" alt="">
+        </div>
+        </div>
+    </header>
+    <!-- DOMAINES -->
+    <section>
+        <div class="section-title">
+        <p>NOS DOMAINES</p>
+        <h2>Les technologies qui façonnent demain</h2>
+        </div>
+        <div class="cards">
+        <div class="card">
+        <img src="Image/intelligence-artificielle-futuriste-science-fiction-decor-fond_1017-53522.jpg">
+        <h3>Intelligence Artificielle</h3>
+        <p>Explorez les innovations en IA, apprentissage automatique et deep learning.</p>
+        <a href="#">En savoir plus →</a>
+        </div>
+        <div class="card">
+        <img src="Image/concept-cybersecurite-dans-art-numerique_23-2151637760.jpg">
+        <h3>Cybersécurité</h3>
+        <p>Protégez vos données et systèmes grâce aux dernières solutions.</p>
+        <a href="#">En savoir plus →</a>
+        </div>
+        <div class="card">
+        <img src="Image/The 5 Biggest Cloud Computing Trends In 2021.jpg">
+        <h3>Cloud Computing</h3>
+        <p>Optimisez vos infrastructures et services avec le cloud.</p>
+        <a href="#">En savoir plus →</a>
+        </div>
+        </div>
+    </section>
+<head>
+</html>
